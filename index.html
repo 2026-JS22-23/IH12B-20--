@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南知多町の観光名所</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Google Maps JavaScript API（現在の推奨読み込み方式） -->
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAKLjisxFelKwIl1_G6MiEO9-ya7Twr5s&loading=async&language=ja&region=JP&callback=initMap">
+    </script>
+
+    <!-- Google Maps APIのcallbackより前に定義を読み込む -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>南知多町の観光名所</h1>
+    <p>愛知県南知多町のおすすめスポットを紹介します。</p>
+</header>
+
+<div id="slideshow">
+    <img id="slide" src="images/himaka.jpg" alt="南知多の観光スポット">
+</div>
+
+<nav>
+    <a href="#map">地図</a>
+    <a href="#spot">観光地</a>
+</nav>
+
+<section id="map">
+    <h2>Google Map</h2>
+    <div id="google_map"></div>
+</section>
+
+<section id="spot">
+    <h2>おすすめ観光スポット</h2>
+
+    <div class="card" data-id="0">
+        <img src="images/himaka.jpg" alt="日間賀島">
+        <h3>日間賀島</h3>
+        <p>タコ料理やフグ料理で有名な島です。</p>
+    </div>
+
+    <div class="card" data-id="1">
+        <img src="images/beachland.jpg" alt="南知多ビーチランド">
+        <h3>南知多ビーチランド</h3>
+        <p>イルカやアシカのショーが人気です。</p>
+    </div>
+
+    <div class="card" data-id="2">
+        <img src="images/hanahiroba.jpg" alt="観光農園 花ひろば">
+        <h3>観光農園 花ひろば</h3>
+        <p>季節ごとの花を楽しめる観光農園です。</p>
+    </div>
+</section>
+
+<button id="topBtn">↑ TOP</button>
+
+<footer>
+    <p>© 2026 南知多町観光紹介ページ</p>
+</footer>
+
+</body>
+</html>
